@@ -4,8 +4,8 @@ import torch
 
 from argparse import ArgumentParser
 
-from src.training.data_reader import train
-from src.utils import print_message, create_directory
+from deepimpact.training.data_reader import train
+from deepimpact.utils import print_message, create_directory
 
 
 def main():

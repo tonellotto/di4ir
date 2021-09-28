@@ -4,12 +4,12 @@ import random
 from argparse import ArgumentParser
 from multiprocessing import Pool
 
-from src.parameters import DEFAULT_DATA_DIR, DEVICE
-from src.utils import print_message, create_directory
+from deepimpact.parameters import DEFAULT_DATA_DIR, DEVICE
+from deepimpact.utils import print_message, create_directory
 
-from src.evaluation.loaders import load_colbert, load_topK, load_qrels
-from src.evaluation.ranking import evaluate
-from src.evaluation.metrics import evaluate_recall
+from deepimpact.evaluation.loaders import load_colbert, load_topK, load_qrels
+from deepimpact.evaluation.ranking import evaluate
+from deepimpact.evaluation.metrics import evaluate_recall
 
 
 def main():

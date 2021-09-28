@@ -7,9 +7,9 @@ import torch.optim as optim
 
 from time import time
 from math import ceil
-from src.model import *
+from deepimpact.model import *
 from multiprocessing import Pool
-from src.evaluation.loaders import load_checkpoint
+from deepimpact.evaluation.loaders import load_checkpoint
 
 MB_SIZE = 1024
 

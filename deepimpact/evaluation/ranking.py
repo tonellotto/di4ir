@@ -3,8 +3,8 @@ import random
 import time
 import torch
 
-from src.utils import print_message, load_checkpoint, batch
-from src.evaluation.metrics import Metrics
+from deepimpact.utils import print_message, load_checkpoint, batch
+from deepimpact.evaluation.metrics import Metrics
 
 
 def rerank(args, query, pids, passages, index=None):

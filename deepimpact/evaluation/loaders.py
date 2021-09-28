@@ -1,6 +1,6 @@
-from src.parameters import DEVICE
-from src.model import MultiBERT
-from src.utils import print_message, load_checkpoint
+from deepimpact.parameters import DEVICE
+from deepimpact.model import MultiBERT
+from deepimpact.utils import print_message, load_checkpoint
 
 
 def load_qrels(qrels_path):

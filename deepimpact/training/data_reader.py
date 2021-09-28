@@ -6,10 +6,10 @@ import torch.nn as nn
 from argparse import ArgumentParser
 from transformers import AdamW
 
-from src.parameters import DEVICE, SAVED_CHECKPOINTS
+from deepimpact.parameters import DEVICE, SAVED_CHECKPOINTS
 
-from src.model import MultiBERT
-from src.utils import print_message, save_checkpoint
+from deepimpact.model import MultiBERT
+from deepimpact.utils import print_message, save_checkpoint
 import re
 import datetime
 class TrainReader:

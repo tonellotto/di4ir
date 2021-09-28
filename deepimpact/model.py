@@ -6,8 +6,8 @@ from random import sample, shuffle, randint
 from itertools import accumulate
 from transformers import *
 import re
-from src.parameters import DEVICE
-from src.utils2 import cleanQ, cleanD
+from deepimpact.parameters import DEVICE
+from deepimpact.utils2 import cleanQ, cleanD
 
 MAX_LENGTH = 300
 

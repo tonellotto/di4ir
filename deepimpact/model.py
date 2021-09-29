@@ -78,9 +78,6 @@ class MultiBERT(BertPreTrainedModel):
 
             pre_pairs.append((tokenized, token_idxs))
 
-        if max_seq_length % 10 == 0:
-            print("#>>>   max_seq_length = ", max_seq_length)
-
         for tokenized, token_idxs in pre_pairs:
             pairs.append(self.convert_example(tokenized, max_seq_length))
             X.append(token_idxs)
@@ -128,8 +125,6 @@ class MultiBERT(BertPreTrainedModel):
         return (mask.type(torch.float32) @ y_score), term_scores #, ordered_terms #, num_exceeding_fifth
 
     def index(self, D, max_seq_length):
-        if max_seq_length % 10 == 0:
-            print("#>>>   max_seq_length = ", max_seq_length)
 
         bsize = len(D)
         offset = 0

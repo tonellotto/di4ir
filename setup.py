@@ -9,6 +9,6 @@ setup(
     packages=['deepimpact'],
     long_description=readme,
     install_requires=[
-        'transformers==3.4.0',
+        'transformers>=3.4.0',
     ],
 )
